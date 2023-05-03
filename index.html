@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online course</title>
+    
+    <style>
+        body {
+    background: url(https://static.vecteezy.com/system/resources/previews/010/882/184/original/student-watch-online-video-education-illustration-background-with-laptop-study-course-learning-distance-webinar-personal-training-business-class-lesson-tutorial-banner-concept-web-digital-vector.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.left img {
+    width: 63px;
+    border-radius: 50px;
+}
+
+.left h4 {
+    position: absolute;
+    top: 55px;
+}
+
+
+.navbar {
+    display: inline-block;
+    
+    border-radius: 6px;
+    position: absolute;
+    left: 450px;
+    top: 15px;
+    padding-right: 35px;
+    padding-left: 5px;
+    width: 40%;
+}
+
+.navbar li {
+    display: inline-block;
+   
+    font-size: 20px;
+
+}
+
+.navbar li a {
+    text-decoration: none;
+    margin: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    color: blue;
+}
+
+.navbar li a:hover {
+    color: brown;
+    text-decoration: underline;
+}
+
+div h4 {
+    position: absolute;
+    top: 55px;
+}
+
+.aboutus {
+    display: inline-block;
+    position: absolute;
+    right: 55px;
+    border: 2px solid black;
+}
+
+
+#search {
+    position: absolute;
+    top: 28px;
+    padding-block: 5px;
+    padding-left: 30px;
+    border-radius: 93px;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#search:hover {
+    border: 3px solid black;
+}
+
+
+.container {
+    font-size: 20px;
+
+    position: absolute;
+    margin: left;
+    left: 200px;
+    top: 150px;
+
+    margin-left: 380px;
+}
+
+.inbox {
+    border-radius: 93px;
+    
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px;
+}
+
+.inbox:hover {
+    border: 3px solid black;
+}
+
+.str {
+    position: absolute;
+    left: 669px;
+    top: 490px;
+    font-size: 30px;
+}
+
+.btn {
+    position: absolute;
+    top: 570px;
+    left: 820px;
+    font-size: 20px;
+}
+
+.btn:hover {
+    background-color: rgb(107, 157, 239);
+}
+
+#btnss {
+    position: absolute;
+    top: 570px;
+    left: 700px;
+}
+
+#stream {
+    font-size: 23px;
+}
+#myclass{
+    font-size: 26px;
+    border-radius: 93px;
+}
+.btn2 {
+    position: absolute;
+    left: 1250px;
+    top: 650px;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.btn3 {
+    position: absolute;
+    left: 1350px;
+    top: 650px;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.btn2:hover {
+    background-color: rgb(255, 240, 221);
+    color: rgb(255, 0, 0);
+}
+
+.btn3:hover {
+    background-color: rgb(255, 240, 221);
+    color: rgb(255, 0, 0);
+}
+.chooseclass{
+    position: absolute;
+    left: 90px;
+    font-size: 30px;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <img src="https://images-platform.99static.com//KlBLMX8dQrcq6hZGnxf5HSnG29I=/8x543:525x1060/fit-in/500x500/99designs-contests-attachments/123/123360/attachment_123360235"
+                alt="">
+           
+
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="course"><a href="batches.html" target="_self">Batches</a></li>
+                <li><a href="#">Class</a></li>
+                <li><a href="#" target="_blank">Faculty</a></li>
+            </ul>
+
+        </div>
+        <div>
+            <h4>NK classes</h4>
+        </div>
+        <div class="right"></div>
+        <!-- <button class="aboutus" id="contact">contact us</button> -->
+        <input type="search" name="searchbox" class="aboutus" id="search" placeholder="search here">
+    </header>
+    <form action="backend.php">
+        <div class="container">
+            <div>
+                <input type="text" name="name" class="inbox" placeholder="enter name">
+            </div>
+            <div>
+                <input type="number" name="mobile" class="inbox" placeholder="enter mobile no." >
+            </div>
+            <div>
+                <input type="email" name="email" class="inbox" placeholder="enter email id">
+            </div>
+            <div>
+                <input type="text" name="address" class="inbox" placeholder="enter address">
+            </div>
+            <div class="chooseclass">
+                <!-- <input type="number" name="class" class="inbox" placeholder="enter your class"> -->
+                class: <select name="myclass" id="myclass">
+                    <option value="11th">11th</option>
+                    <option value="12th">12th</option>
+                    <option value="dropper">dropper</option>
+                </select>
+            </div>
+        </div>
+        <div class="str">
+            stream: <select name="mystream" id="stream" class="inbox">
+                <option value="pcm">pcm</option>
+                <option value="pcb">pcb</option>
+                <option value="commerce">commerce</option>
+                <option value="arts">arts</option>
+            </select>
+        </div>
+        <div>
+            <input type="submit" class="btn" name="submit" id="btnss">
+            <input type="reset" class="btn" name="reset">
+        </div>
+
+    </form>
+    <div>
+        <button class="btn2" title="047294027489274932745">call us</button>
+        <button class="btn3" title="donotmail@gmail.com">email us</button>
+    </div>
+</body>
+
+</html>
